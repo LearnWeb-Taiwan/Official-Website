@@ -1,18 +1,34 @@
 <template>
   <div id="app">
     <nav class="navbar-wrapper">
-      <router-link to="/" class="navbar-logo"><img class="logo-img" src="./assets/images/logo-rectangle-v1.0.png" alt="learnweb-logo" srcset=""></router-link>
+      <router-link to="/" class="navbar-logo"
+        ><img
+          class="logo-img"
+          src="./assets/images/logo-rectangle-v1.0.png"
+          alt="learnweb-logo"
+          srcset=""
+      /></router-link>
       <ul class="navbar-list">
         <router-link to="/" class="navbar-item">Home</router-link>
         <router-link to="/about" class="navbar-item">About</router-link>
       </ul>
       <div class="navbar-menu-btn" @click="isMenuOpen = !isMenuOpen">Menu</div>
-      <div class="navbar-menu" :class="{'is-acitve':isMenuOpen}">
-        <router-link to="/" class="navbar-item" @click.native="isMenuOpen = !isMenuOpen">Home</router-link>
-        <router-link to="/about" class="navbar-item" @click.native="isMenuOpen = !isMenuOpen">About</router-link>
+      <div class="navbar-menu" :class="{ 'is-acitve': isMenuOpen }">
+        <router-link
+          to="/"
+          class="navbar-item"
+          @click.native="isMenuOpen = !isMenuOpen"
+          >Home</router-link
+        >
+        <router-link
+          to="/about"
+          class="navbar-item"
+          @click.native="isMenuOpen = !isMenuOpen"
+          >About</router-link
+        >
       </div>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 <script>
@@ -20,11 +36,11 @@
 
 export default {
   name: 'App',
-  data () {
+  data() {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
     }
-  }
+  },
 }
 </script>
 <style lang="scss">
@@ -36,12 +52,12 @@ body {
 
 .navbar-wrapper {
   position: fixed;
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  padding:0 16px;
+  padding: 0 16px;
   box-shadow: 0 0 4px 0px black;
   background: white;
   font-weight: bold;
@@ -49,15 +65,15 @@ body {
     display: inline-block;
     height: 64px;
     .logo-img {
-      height:100%;
+      height: 100%;
       object-fit: contain;
     }
   }
-  .navbar-list{
-    margin-right:16px;
-    color: #4A4747;
+  .navbar-list {
+    margin-right: 16px;
+    color: #4a4747;
     .navbar-item {
-      display:inline-block;
+      display: inline-block;
       width: 96px;
       height: 64px;
       line-height: 64px;
@@ -65,10 +81,10 @@ body {
       box-sizing: border-box;
       transition: 0.3s;
       &:hover {
-        background: rgb(240, 239, 239)
+        background: rgb(240, 239, 239);
       }
       &.router-link-exact-active {
-        border-bottom: 4px solid #F0822B;
+        border-bottom: 4px solid #f0822b;
       }
     }
   }
@@ -78,28 +94,28 @@ body {
   }
   .navbar-menu {
     position: absolute;
-    top:64px;
-    left:0;
-    height:0;
-    width:100%;
+    top: 64px;
+    left: 0;
+    height: 0;
+    width: 100%;
     background: white;
-    transition:0.4s ease;
+    transition: 0.4s ease;
     overflow: hidden;
     box-shadow: 0 6px 2px -4px gray;
     &.is-acitve {
       height: 96px;
     }
     .navbar-item {
-      display:inline-block;
+      display: inline-block;
       width: 100%;
       height: 48px;
       line-height: 48px;
       text-align: center;
       box-sizing: border-box;
       transition: 0.3s;
-      background:rgb(250, 250, 250);
+      background: rgb(250, 250, 250);
       &:hover {
-        background: rgb(236, 236, 236)
+        background: rgb(236, 236, 236);
       }
       // &.router-link-exact-active {
       //   border-bottom: 4px solid #F0822B;
@@ -108,23 +124,23 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  .navbar-wrapper{
+  .navbar-wrapper {
     padding: 0 12px 0 0;
     .navbar-logo {
       display: inline-block;
       height: 48px;
       .logo-img {
-        height:100%;
+        height: 100%;
         object-fit: contain;
       }
     }
     .navbar-list {
       display: none;
       margin-right: 16px;
-      color: #4A4747;
+      color: #4a4747;
     }
     .navbar-menu {
-      top:48px;
+      top: 48px;
     }
     .navbar-menu-btn {
       display: inline-block;
