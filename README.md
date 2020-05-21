@@ -2,6 +2,6 @@
 
 ## License
 
-[MIT](https://github.com/LearnWeb-Taiwan/Meetups/blob/master/LICENSE)
+[MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE)
 
 Copyright (c) 2020-present, LearnWeb Taiwan
