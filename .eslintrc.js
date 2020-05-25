@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
     'no-console': 'off',
+    endOfLine: 0,
   },
   env: {
     browser: true,
