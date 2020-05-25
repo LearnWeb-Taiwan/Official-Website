@@ -1,27 +1,46 @@
 <template>
-  <div id="app">
-    <Navbar />
-    <router-view />
-  </div>
+  <nav class="navbar-wrapper">
+    <router-link to="/" class="navbar-logo"
+      ><img
+        class="logo-img"
+        src="@/assets/images/logo-rectangle-v1.0.png"
+        alt="learnweb-logo"
+        srcset=""
+    /></router-link>
+    <ul class="navbar-list">
+      <router-link to="/" class="navbar-item">Home</router-link>
+      <router-link to="/about" class="navbar-item">About</router-link>
+    </ul>
+    <div class="navbar-menu-btn" @click="isMenuOpen = !isMenuOpen">Menu</div>
+    <div class="navbar-menu" :class="{ 'is-active': isMenuOpen }">
+      <router-link
+        to="/"
+        class="navbar-item"
+        @click.native="isMenuOpen = !isMenuOpen"
+        >Home</router-link
+      >
+      <router-link
+        to="/about"
+        class="navbar-item"
+        @click.native="isMenuOpen = !isMenuOpen"
+        >About</router-link
+      >
+    </div>
+  </nav>
 </template>
-<script>
-// @ is an alias to /src
-import Navbar from './components/Navbar'
 
+<script>
 export default {
-  name: 'App',
-  components: {
-    Navbar,
+  name: 'Navbar',
+  data() {
+    return {
+      isMenuOpen: false,
+    }
   },
 }
 </script>
-<style lang="scss">
-body {
-  min-width: 320px;
-  font-family: 'Noto_Sans_TC';
-  background: rgb(248, 248, 248);
-}
 
+<style lang="scss">
 .navbar-wrapper {
   position: fixed;
   width: 100%;
@@ -66,6 +85,7 @@ body {
   }
   .navbar-menu {
     position: absolute;
+    display: none;
     top: 64px;
     left: 0;
     height: 0;
@@ -89,9 +109,6 @@ body {
       &:hover {
         background: rgb(236, 236, 236);
       }
-      // &.router-link-exact-active {
-      //   border-bottom: 4px solid #F0822B;
-      // }
     }
   }
 }
@@ -112,6 +129,7 @@ body {
       color: #4a4747;
     }
     .navbar-menu {
+      display: block;
       top: 48px;
     }
     .navbar-menu-btn {

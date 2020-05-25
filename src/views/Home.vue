@@ -1,5 +1,7 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    test
+  </div>
 </template>
 
 <script>
@@ -10,3 +12,9 @@ export default {
   components: {},
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  background: blue;
+}
+</style>
