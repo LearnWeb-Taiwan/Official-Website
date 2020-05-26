@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <Navbar />
-    <router-view />
+    <div class="app-navbar-wrapper">
+      <Navbar />
+    </div>
+    <div class="app-main-wrapper">
+      <router-view />
+    </div>
   </div>
 </template>
 <script>
@@ -20,5 +24,15 @@ body {
   min-width: 320px;
   font-family: 'Noto_Sans_TC';
   background: rgb(248, 248, 248);
+}
+
+.app-main-wrapper {
+  padding-top: 64px;
+}
+
+@media screen and (max-width: 600px) {
+  .app-main-wrapper {
+    padding-top: 48px;
+  }
 }
 </style>
