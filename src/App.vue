@@ -3,9 +3,9 @@
     <div class="app-navbar-wrapper">
       <Navbar />
     </div>
-    <div class="app-main-wrapper">
+    <main class="app-main-wrapper">
       <router-view />
-    </div>
+    </main>
   </div>
 </template>
 <script>

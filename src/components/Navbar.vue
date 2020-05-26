@@ -9,7 +9,7 @@
     /></router-link>
     <ul class="navbar-list">
       <router-link to="/" class="navbar-item">Home</router-link>
-      <router-link to="/about" class="navbar-item">About</router-link>
+      <!-- <router-link to="/about" class="navbar-item">About</router-link> -->
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
@@ -26,12 +26,12 @@
         @click.native="isMenuOpen = !isMenuOpen"
         >Home</router-link
       >
-      <router-link
+      <!-- <router-link
         to="/about"
         class="navbar-item"
         @click.native="isMenuOpen = !isMenuOpen"
         >About</router-link
-      >
+      > -->
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
