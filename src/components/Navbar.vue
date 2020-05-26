@@ -10,6 +10,13 @@
     <ul class="navbar-list">
       <router-link to="/" class="navbar-item">Home</router-link>
       <router-link to="/about" class="navbar-item">About</router-link>
+      <a
+        href="https://github.com/LearnWeb-Taiwan"
+        class="navbar-item"
+        target="_blank"
+        ref="noopener"
+        >GitHub</a
+      >
     </ul>
     <div class="navbar-menu-btn" @click="isMenuOpen = !isMenuOpen">Menu</div>
     <div class="navbar-menu" :class="{ 'is-active': isMenuOpen }">
@@ -24,6 +31,14 @@
         class="navbar-item"
         @click.native="isMenuOpen = !isMenuOpen"
         >About</router-link
+      >
+      <a
+        href="https://github.com/LearnWeb-Taiwan"
+        class="navbar-item"
+        target="_blank"
+        ref="noopener"
+        @click="isMenuOpen = !isMenuOpen"
+        >GitHub</a
       >
     </div>
   </nav>
@@ -51,6 +66,7 @@ export default {
   padding: 0 16px;
   box-shadow: 0 0 4px 0px black;
   background: white;
+  font-family: 'Noto_Sans_TC';
   font-weight: bold;
   .navbar-logo {
     display: inline-block;
