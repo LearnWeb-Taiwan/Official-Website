@@ -58,6 +58,7 @@ export default {
 <style lang="scss">
 .navbar-wrapper {
   position: fixed;
+  z-index: 9;
   width: 100%;
   display: flex;
   box-sizing: border-box;
