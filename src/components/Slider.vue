@@ -31,7 +31,7 @@ export default {
       type: Number,
       default: 1,
     },
-    autoSlide: {
+    isAutoSlide: {
       type: Boolean,
       default: false,
     },
@@ -42,8 +42,8 @@ export default {
     }
   },
   mounted() {
-    if (this.autoSlide) {
-      this.slideContinuous()
+    if (this.isAutoSlide) {
+      this.autoSlide()
     }
   },
   methods: {
@@ -56,7 +56,7 @@ export default {
         this.currIndex = 0
       }
     },
-    slideContinuous() {
+    autoSlide() {
       let self = this
       setInterval(function () {
         self.slideToNext()

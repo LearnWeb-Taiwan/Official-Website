@@ -18,7 +18,7 @@
         <div class="banner-btn">立即參與</div>
         <br />
       </div>
-      <slider :imageSet="sliderImage" :slideSec="2.5" autoSlide />
+      <slider :imageSet="sliderImage" :slideSec="2.5" :autoSlide="false" />
     </section>
   </div>
 </template>
