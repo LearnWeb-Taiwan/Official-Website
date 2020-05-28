@@ -1,21 +1,26 @@
 <template>
   <div id="app">
     <div class="app-navbar-wrapper">
-      <Navbar />
+      <learnweb-navbar />
     </div>
     <main class="app-main-wrapper">
       <router-view />
     </main>
+    <div class="app-footer-wrapper">
+      <learnweb-footer />
+    </div>
   </div>
 </template>
 <script>
 // @ is an alias to /src
-import Navbar from './components/Navbar'
+import learnwebNavbar from './components/Navbar'
+import learnwebFooter from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    Navbar,
+    learnwebNavbar,
+    learnwebFooter,
   },
 }
 </script>
