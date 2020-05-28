@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'Slider',
+  name: 'PicSlider',
   props: {
     imageSet: Array,
     slideSec: {

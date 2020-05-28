@@ -18,18 +18,22 @@
         <div class="banner-btn">立即參與</div>
         <br />
       </div>
-      <slider :imageSet="sliderImage" :slideSec="2.5" :autoSlide="false" />
+      <pic-slider
+        :imageSet="sliderImage"
+        :slideSec="2.5"
+        :isAutoSlide="false"
+      />
     </section>
   </div>
 </template>
 
 <script>
-import slider from '@/components/Slider'
+import picSlider from '@/components/PicSlider'
 
 export default {
   name: 'Home',
   components: {
-    slider,
+    picSlider,
   },
   data() {
     return {
