@@ -21,7 +21,7 @@
       <pic-slider
         :imageSet="sliderImage"
         :slideSec="2.5"
-        :isAutoSlide="false"
+        :needAutoSlide="false"
       />
     </section>
   </div>

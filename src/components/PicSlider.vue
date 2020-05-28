@@ -31,7 +31,7 @@ export default {
       type: Number,
       default: 1,
     },
-    isAutoSlide: {
+    needAutoSlide: {
       type: Boolean,
       default: false,
     },
@@ -42,7 +42,7 @@ export default {
     }
   },
   mounted() {
-    if (this.isAutoSlide) {
+    if (this.needAutoSlide) {
       this.autoSlide()
     }
   },
