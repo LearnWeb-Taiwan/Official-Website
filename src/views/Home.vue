@@ -1,30 +1,62 @@
 <template>
   <div class="home-wrapper">
+    <!-- banner wrapper start-->
     <section class="banner-wrapper">
       <div class="banner-slogan container">
-        <p class="banner-title">It's time for you!</p>
+        <p class="banner-title">It's time to learn!</p>
         <p class="banner-subtitle">學習使人永不匱乏，熱情使人永不空虛。</p>
         <p class="banner-content">
-          這是一個使
-          <span class="highlight">初階</span>
-          網頁開發者能輕鬆分享與互動的開源社群。<br />
+          想要找到能夠一起
+          <span class="highlight">學習</span>、
+          <span class="highlight">分享</span>
+          網頁技術的開發者嗎？<br />
           我們不定時舉辦
           <span class="highlight">講座</span>、
           <span class="highlight">工作坊</span> 與
           <span class="highlight">讀書會</span>，<br />
-          激發你對於網頁開發中的無限創意。<br /><br />
-          準備好認識更多新朋友，一起享受美好的討論時光了嗎？
+          激發你對於網頁開發中的無限創意。
         </p>
         <br />
-        <div class="banner-btn">立即參與</div>
+        <div class="banner-btn">認識我們</div>
         <br />
       </div>
       <pic-slider
         :imageSet="sliderImage"
         :slideSec="2.5"
-        :needAutoSlide="false"
+        :needAutoSlide="true"
       />
     </section>
+    <!-- banner wrapper end-->
+    <!-- about wrapper start-->
+    <section class="about-wrapper container">
+      <h2 class="about-title">LearnWeb 在做什麼？</h2>
+      <br />
+      <p class="about-content">
+        我們相信
+        <span class="highlight">討論</span>
+        與
+        <span class="highlight">分享</span>
+        能使我們茁壯！<br />
+        因此我們不定時舉辦
+        <span class="highlight">講座</span>、
+        <span class="highlight">工作坊</span> 與
+        <span class="highlight">讀書會</span>，<br />
+        激發彼此對於網頁開發中的無限創意。<br /><br />
+        除此之外， 我們也試著提供初階開發者<br />
+        一個能
+        <span class="highlight">自由自在</span>
+        發言的環境。<br />
+        因此不論你是
+        <span class="highlight">正在自學</span>
+        或
+        <span class="highlight">剛入職</span>
+        的小小工程師，<br />
+        都非常歡迎你們的到來。<br />
+        <br />
+        準備好認識更多新朋友，一起享受美好的討論時光了嗎？
+      </p>
+    </section>
+    <!-- about wrapper end-->
   </div>
 </template>
 
@@ -110,7 +142,7 @@ export default {
         }
       }
       &::after {
-        content: '立即參與';
+        content: '認識我們';
         padding: 8px 16px;
         box-sizing: border-box;
         position: absolute;
@@ -123,7 +155,7 @@ export default {
         transition: 0.3s;
       }
       &::before {
-        content: '立即參與';
+        content: '認識我們';
         padding: 8px 16px;
         box-sizing: border-box;
         position: absolute;
@@ -149,16 +181,16 @@ export default {
       }
       .banner-subtitle {
         padding: 8px;
-        font-size: 24px;
+        font-size: 28px;
         background: #00000090;
       }
       .banner-content {
         margin-top: 24px;
         padding: 8px;
-        font-size: 16px;
+        font-size: 18px;
       }
       .banner-btn {
-        font-size: 14px;
+        font-size: 18px;
         margin-top: 24px;
         &:hover {
           &::after {
@@ -198,21 +230,45 @@ export default {
         font-size: 20px;
         margin-top: 40px;
         &::after {
-          content: '立即參與實體聚會';
-          width: 200px;
-          left: -50px;
+          content: '我們是誰？';
+          width: 135px;
+          left: -20px;
         }
         &:hover {
           &::after {
             top: 0px;
-            left: -50px;
+            left: -20px;
           }
           &::before {
             top: 0px;
-            left: -50px;
+            left: -20px;
           }
         }
       }
+    }
+  }
+}
+
+.about-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  .about-title {
+    display: inline-block;
+    padding-bottom: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 4px solid #f0822b;
+  }
+  .about-content {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 24px;
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    .highlight {
+      color: #f0822b;
     }
   }
 }
