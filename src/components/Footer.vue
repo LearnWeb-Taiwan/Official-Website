@@ -14,13 +14,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.displayWhenWidthOver {
-  display: block;
-}
-.mobileOnly {
-  display: none;
-}
-
 .footer-wrapper {
   display: flex;
   justify-content: center;

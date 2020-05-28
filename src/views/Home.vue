@@ -39,10 +39,10 @@ export default {
   data() {
     return {
       sliderImage: [
-        '/images/cover.jpg',
-        '/images/20191114.jpg',
-        '/images/20191117.jpg',
-        '/images/20200523.jpg',
+        './images/cover.jpg',
+        './images/20191114.jpg',
+        './images/20191117.jpg',
+        './images/20200523.jpg',
       ],
     }
   },
