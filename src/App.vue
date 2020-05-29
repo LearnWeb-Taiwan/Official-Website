@@ -35,7 +35,7 @@ body {
   padding-top: 64px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .app-main-wrapper {
     padding-top: 48px;
   }

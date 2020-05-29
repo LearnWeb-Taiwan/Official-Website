@@ -17,6 +17,9 @@
       <router-link to="/activities" class="navbar-item">
         <i class="icon far fa-calendar-alt"></i>Activities
       </router-link>
+      <router-link to="/collaboration" class="navbar-item">
+        <i class="icon fas fa-users"></i>Collaboration
+      </router-link>
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
@@ -24,6 +27,14 @@
         ref="noopener"
       >
         <i class="icon fab fa-github"></i>GitHub
+      </a>
+      <a
+        href="https://github.com/LearnWeb-Taiwan"
+        class="navbar-item"
+        target="_blank"
+        ref="noopener"
+      >
+        <i class="icon fab fa-facebook"></i>Facebook
       </a>
     </ul>
     <!-- expanded menu end -->
@@ -46,6 +57,13 @@
       >
         <i class="icon far fa-calendar-alt"></i>Activities
       </router-link>
+      <router-link
+        to="/collaboration"
+        class="navbar-item"
+        @click.native="isMenuOpen = !isMenuOpen"
+      >
+        <i class="icon fas fa-users"></i>Collaboration
+      </router-link>
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
@@ -54,6 +72,15 @@
         @click="isMenuOpen = !isMenuOpen"
       >
         <i class="icon fab fa-github"></i>GitHub
+      </a>
+      <a
+        href="https://www.facebook.com/groups/LearnWeb.Taiwan"
+        class="navbar-item"
+        target="_blank"
+        ref="noopener"
+        @click="isMenuOpen = !isMenuOpen"
+      >
+        <i class="icon fab fa-facebook"></i>Facebook
       </a>
     </div>
     <!-- collapsed menu end -->
@@ -98,7 +125,7 @@ export default {
     color: #4a4747;
     .navbar-item {
       display: inline-block;
-      width: 120px;
+      padding: 0 12px;
       height: 64px;
       line-height: 64px;
       text-align: center;
@@ -131,10 +158,11 @@ export default {
     overflow: hidden;
     box-shadow: 0 6px 2px -4px gray;
     .icon {
+      width: 24px;
       margin-right: 8px;
     }
     &.is-active {
-      height: 144px;
+      height: calc(48px * 5);
     }
     .navbar-item {
       display: inline-block;
@@ -148,11 +176,15 @@ export default {
       background: rgb(250, 250, 250);
       &:hover {
         background: rgb(236, 236, 236);
+        color: #f0822b;
+      }
+      &.router-link-exact-active {
+        color: #4f74af;
       }
     }
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .navbar-wrapper {
     padding: 0 12px 0 0;
     .navbar-logo {
