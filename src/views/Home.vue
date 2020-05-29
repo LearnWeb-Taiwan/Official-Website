@@ -17,14 +17,14 @@
           激發你對於網頁開發中的無限創意。
         </p>
         <br />
-        <div class="banner-btn">認識我們</div>
+        <div class="banner-btn">
+          加入我們
+          <i class="icon fas fa-door-open"></i>
+          <i class="icon fas fa-door-closed"></i>
+        </div>
         <br />
       </div>
-      <pic-slider
-        :imageSet="sliderImage"
-        :slideSec="2.5"
-        :needAutoSlide="true"
-      />
+      <pic-slider :imageSet="sliderImage" :slideSec="2" :needAutoSlide="true" />
     </section>
     <!-- banner wrapper end-->
     <!-- about wrapper start-->
@@ -115,6 +115,7 @@ export default {
       line-height: 24px;
       margin-top: 40px;
       display: inline-block;
+      font-weight: normal;
       padding: 12px;
       font-size: 20px;
       background: #00000090;
@@ -125,52 +126,34 @@ export default {
     .banner-btn {
       cursor: pointer;
       display: inline-block;
-      font-size: 24px;
-      padding: 8px 16px;
-      background: #4f74af;
+      font-size: 20px;
+      padding: 8px;
       margin-top: 40px;
       position: relative;
       top: 0;
       left: 0;
       z-index: 2;
       transition: 0.3s;
+      background: #000000;
+      .icon {
+        margin-left: 8px;
+        color: white;
+        transition: 0.5s;
+      }
+      .fa-door-open {
+        display: none;
+      }
+      .fa-door-closed {
+        display: inline-block;
+      }
       &:hover {
-        &::after {
-          top: -12px;
-          left: 8px;
-          background: #000000;
+        left: 16px;
+        .fa-door-open {
+          display: inline-block;
         }
-        &::before {
-          top: 8px;
-          left: 16px;
+        .fa-door-closed {
+          display: none;
         }
-      }
-      &::after {
-        content: '認識我們';
-        padding: 8px 16px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        background: #000000;
-        transition: 0.3s;
-      }
-      &::before {
-        content: '認識我們';
-        padding: 8px 16px;
-        box-sizing: border-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        background: #f0822b;
-        transition: 0.3s;
-        color: transparent;
       }
     }
   }
@@ -196,16 +179,6 @@ export default {
       .banner-btn {
         font-size: 18px;
         margin-top: 24px;
-        &:hover {
-          &::after {
-            top: -8px;
-            left: 4px;
-          }
-          &::before {
-            top: 4px;
-            left: 12px;
-          }
-        }
       }
     }
   }
@@ -233,21 +206,6 @@ export default {
       .banner-btn {
         font-size: 20px;
         margin-top: 40px;
-        &::after {
-          content: '我們是誰？';
-          width: 135px;
-          left: -20px;
-        }
-        &:hover {
-          &::after {
-            top: 0px;
-            left: -20px;
-          }
-          &::before {
-            top: 0px;
-            left: -20px;
-          }
-        }
       }
     }
   }
