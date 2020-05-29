@@ -40,21 +40,25 @@
         因此我們不定時舉辦
         <span class="highlight">講座</span>、
         <span class="highlight">工作坊</span> 與
-        <span class="highlight">讀書會</span>，<br />
-        激發彼此對於網頁開發中的無限創意。<br /><br />
-        除此之外， 我們也試著提供初階開發者<br />
-        一個能
-        <span class="highlight">自由自在</span>
-        發言的環境。<br />
-        因此不論你是
+        <span class="highlight">讀書會</span>
+        ，激發彼此對於網頁開發中的無限創意。<br />
+        不論你是
         <span class="highlight">正在自學</span>
         或
         <span class="highlight">剛入職</span>
-        的小小工程師，<br />
-        都非常歡迎你們的到來。<br />
+        的小小工程師，我們都非常歡迎你們的到來。<br />
         <br />
-        準備好認識更多新朋友，一起享受美好的討論時光了嗎？
       </p>
+      <div class="about-card-wrapper">
+        <div class="card-wrapper" v-for="idx in 2" :key="idx">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="card-title">講座</div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- about wrapper end-->
   </div>
@@ -269,6 +273,28 @@ export default {
     font-weight: bold;
     .highlight {
       color: #f0822b;
+    }
+  }
+  .about-card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    .card-wrapper {
+      padding: 12px;
+      box-shadow: 0 2px 2px #0008;
+      width: 360px;
+      .card-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .card-icon {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          margin-right: 24px;
+          border: 2px solid black;
+          border-radius: 50%;
+        }
+      }
     }
   }
 }
