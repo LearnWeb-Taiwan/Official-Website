@@ -1,11 +1,11 @@
 <template>
-  <div class="activities-wrapper">
-    <h1>This is an activities page</h1>
+  <div class="pageName-wrapper">
+    <h1>This is an pageName page</h1>
   </div>
 </template>
 <script>
 export default {
-  name: 'activities',
+  name: 'pageName',
   components: {},
 }
 </script>

@@ -14,6 +14,11 @@ const routes = [
     name: 'Activities',
     component: () => import('../views/Activities.vue'),
   },
+  {
+    path: '/collaboration',
+    name: 'Collaboration',
+    component: () => import('../views/Collaboration.vue'),
+  },
 ]
 
 const router = new VueRouter({
