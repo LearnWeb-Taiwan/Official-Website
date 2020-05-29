@@ -6,15 +6,9 @@
         <p class="banner-title">It's time to learn!</p>
         <p class="banner-subtitle">學習使人永不匱乏，熱情使人永不空虛。</p>
         <p class="banner-content">
-          想要找到能夠一起
-          <span class="highlight">學習</span>、
-          <span class="highlight">分享</span>
-          網頁技術的開發者嗎？<br />
-          我們不定時舉辦
-          <span class="highlight">講座</span>、
-          <span class="highlight">工作坊</span> 與
-          <span class="highlight">讀書會</span>，<br />
-          激發你對於網頁開發中的無限創意。
+          對於網頁開發充滿熱情？<br />
+          喜歡參與社群勝於獨自開發？<br />
+          想要找到一群能夠一起討論網頁技術的開發者？
         </p>
         <br />
         <div class="banner-btn">
@@ -32,32 +26,63 @@
       <h2 class="about-title">LearnWeb 在做什麼？</h2>
       <br />
       <p class="about-content">
-        我們相信
-        <span class="highlight">討論</span>
-        與
-        <span class="highlight">分享</span>
-        能使我們茁壯！<br />
-        因此我們不定時舉辦
+        「我們是一群熱於分享的網頁開發者們。」<br /><br />
+        我們不定時舉辦各種
         <span class="highlight">講座</span>、
         <span class="highlight">工作坊</span> 與
         <span class="highlight">讀書會</span>
-        ，激發彼此對於網頁開發中的無限創意。<br />
-        不論你是
+        ，激發彼此對於網頁開發技術的無限想法。<br /><br />
+        我們期望能建立給予
         <span class="highlight">正在自學</span>
-        或
+        與
         <span class="highlight">剛入職</span>
-        的小小工程師，我們都非常歡迎你們的到來。<br />
+        的開發者們，一個能輕鬆發言的舞台。<br />
         <br />
       </p>
       <div class="about-card-wrapper">
-        <div class="card-wrapper" v-for="idx in 2" :key="idx">
+        <!-- card -->
+        <div class="card-wrapper">
           <div class="card-header">
             <div class="card-icon">
-              <i class="fas fa-comment-dots"></i>
+              <i class="icon fas fa-poll-h"></i>
             </div>
-            <div class="card-title">講座</div>
+            <div class="card-title">技術講座</div>
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              由講者準備精彩的議題，從心法到工具，再從應用到架構，各式各樣經驗，直接吸取精華。
+            </div>
           </div>
         </div>
+        <!-- card -->
+        <div class="card-wrapper">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="icon fas fa-tools"></i>
+            </div>
+            <div class="card-title">工作坊</div>
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              由主持人帶著大家手把手寫出屬於自己的網頁應用程式，透過實作來精進技術，並且學習新的
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card-wrapper">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="icon fas fa-book"></i>
+            </div>
+            <div class="card-title">讀書會</div>
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              精選網頁開發經典書目閱讀，以讀書小組的形式深入討論，藉由成員的重新詮釋，得到從未想過的弦外之音！
+            </div>
+          </div>
+        </div>
+        <!-- card -->
       </div>
     </section>
     <!-- about wrapper end-->
@@ -179,6 +204,10 @@ export default {
       .banner-btn {
         font-size: 18px;
         margin-top: 24px;
+        &:hover {
+          top: 8px;
+          left: 0;
+        }
       }
     }
   }
@@ -216,6 +245,7 @@ export default {
   text-align: center;
   .about-title {
     display: inline-block;
+    margin-top: 8px;
     padding-bottom: 4px;
     font-size: 24px;
     font-weight: bold;
@@ -223,12 +253,12 @@ export default {
   }
   .about-content {
     display: inline-block;
+    text-align: center;
     margin: 0 auto;
-    text-align: left;
     line-height: 24px;
     margin-top: 24px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: normal;
     .highlight {
       color: #f0822b;
     }
@@ -236,10 +266,18 @@ export default {
   .about-card-wrapper {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     .card-wrapper {
+      margin: 8px;
       padding: 12px;
-      box-shadow: 0 2px 2px #0008;
-      width: 360px;
+      background: white;
+      box-shadow: 0 2px 2px 0 #0008;
+      transition: 0.2s;
+      flex-basis: 300px;
+      flex-grow: 1;
+      &:hover {
+        box-shadow: 0 6px 4px 0 #0008;
+      }
       .card-header {
         display: flex;
         justify-content: flex-start;
@@ -247,11 +285,36 @@ export default {
         .card-icon {
           width: 50px;
           height: 50px;
+          font-size: 24px;
           line-height: 50px;
-          margin-right: 24px;
-          border: 2px solid black;
+          margin-right: 8px;
+          border: 4px solid #4f74af;
           border-radius: 50%;
+          > i.icon {
+            color: #f0822b;
+          }
         }
+        .card-title {
+          color: black;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      .card-body {
+        text-align: left;
+        margin-top: 8px;
+        .card-content {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .about-wrapper {
+    .about-card-wrapper {
+      .card-wrapper {
+        margin: 8px 0;
       }
     }
   }
