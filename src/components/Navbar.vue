@@ -1,5 +1,6 @@
 <template>
   <nav class="navbar-wrapper">
+    <!-- logo start -->
     <router-link to="/" class="navbar-logo"
       ><img
         class="logo-img"
@@ -7,40 +8,55 @@
         alt="learnweb-logo"
         srcset=""
     /></router-link>
+    <!-- logo end -->
+    <!-- expanded menu start -->
     <ul class="navbar-list">
-      <router-link to="/" class="navbar-item">Home</router-link>
-      <!-- <router-link to="/about" class="navbar-item">About</router-link> -->
+      <router-link to="/" class="navbar-item">
+        <i class="icon fas fa-home"></i>Home
+      </router-link>
+      <router-link to="/activities" class="navbar-item">
+        <i class="icon far fa-calendar-alt"></i>Activities
+      </router-link>
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
         target="_blank"
         ref="noopener"
-        >GitHub</a
       >
+        <i class="icon fab fa-github"></i>GitHub
+      </a>
     </ul>
+    <!-- expanded menu end -->
+    <!-- collapsed button start -->
     <div class="navbar-menu-btn" @click="isMenuOpen = !isMenuOpen">Menu</div>
+    <!-- collapsed button end -->
+    <!-- collapsed menu start -->
     <div class="navbar-menu" :class="{ 'is-active': isMenuOpen }">
       <router-link
         to="/"
         class="navbar-item"
         @click.native="isMenuOpen = !isMenuOpen"
-        >Home</router-link
       >
-      <!-- <router-link
-        to="/about"
+        <i class="icon fas fa-home"></i>Home
+      </router-link>
+      <router-link
+        to="/activities"
         class="navbar-item"
         @click.native="isMenuOpen = !isMenuOpen"
-        >About</router-link
-      > -->
+      >
+        <i class="icon far fa-calendar-alt"></i>Activities
+      </router-link>
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
         target="_blank"
         ref="noopener"
         @click="isMenuOpen = !isMenuOpen"
-        >GitHub</a
       >
+        <i class="icon fab fa-github"></i>GitHub
+      </a>
     </div>
+    <!-- collapsed menu end -->
   </nav>
 </template>
 
@@ -82,12 +98,15 @@ export default {
     color: #4a4747;
     .navbar-item {
       display: inline-block;
-      width: 96px;
+      width: 120px;
       height: 64px;
       line-height: 64px;
       text-align: center;
       box-sizing: border-box;
       transition: 0.3s;
+      i.icon {
+        margin-right: 8px;
+      }
       &:hover {
         background: rgb(240, 239, 239);
       }
@@ -111,15 +130,19 @@ export default {
     transition: 0.4s ease;
     overflow: hidden;
     box-shadow: 0 6px 2px -4px gray;
+    .icon {
+      margin-right: 8px;
+    }
     &.is-active {
-      height: 96px;
+      height: 144px;
     }
     .navbar-item {
       display: inline-block;
       width: 100%;
       height: 48px;
       line-height: 48px;
-      text-align: center;
+      padding-left: calc(100% / 2 - 50px);
+      text-align: left;
       box-sizing: border-box;
       transition: 0.3s;
       background: rgb(250, 250, 250);
