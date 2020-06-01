@@ -7,6 +7,15 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <link href="<%= BASE_URL %>font/font-awesome/css/all.css" rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6TYSVWQBF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V6TYSVWQBF');
+    </script>
   </head>
   <body>
     <noscript>
