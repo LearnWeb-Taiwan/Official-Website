@@ -6,6 +6,10 @@
 
 <!--[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)-->
 
+## PR
+暫不接受 PR 敬請見諒，待 Testing/CI 相關部屬完成後會立即開放。
+
+
 ## License
 
 [MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE)
