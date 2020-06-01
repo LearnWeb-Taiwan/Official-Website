@@ -11,15 +11,19 @@
     <!-- logo end -->
     <!-- expanded menu start -->
     <ul class="navbar-list">
-      <router-link to="/" class="navbar-item">
+      <router-link to="/" class="navbar-item" @click.native="goTop()">
         <i class="icon fas fa-home"></i>Home
       </router-link>
-      <router-link to="/activities" class="navbar-item">
+      <router-link to="/activities" class="navbar-item" @click.native="goTop()">
         <i class="icon far fa-calendar-alt"></i>Activities
       </router-link>
-      <router-link to="/collaboration" class="navbar-item">
+      <!-- <router-link
+        to="/collaboration"
+        class="navbar-item"
+        @click.native="goTop()"
+      >
         <i class="icon fas fa-users"></i>Collaboration
-      </router-link>
+      </router-link> -->
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
@@ -46,24 +50,24 @@
       <router-link
         to="/"
         class="navbar-item"
-        @click.native="isMenuOpen = !isMenuOpen"
+        @click.native=";(isMenuOpen = !isMenuOpen), goTop()"
       >
         <i class="icon fas fa-home"></i>Home
       </router-link>
       <router-link
         to="/activities"
         class="navbar-item"
-        @click.native="isMenuOpen = !isMenuOpen"
+        @click.native=";(isMenuOpen = !isMenuOpen), goTop()"
       >
         <i class="icon far fa-calendar-alt"></i>Activities
       </router-link>
-      <router-link
+      <!-- <router-link
         to="/collaboration"
         class="navbar-item"
-        @click.native="isMenuOpen = !isMenuOpen"
+        @click.native=";(isMenuOpen = !isMenuOpen), goTop()"
       >
         <i class="icon fas fa-users"></i>Collaboration
-      </router-link>
+      </router-link> -->
       <a
         href="https://github.com/LearnWeb-Taiwan"
         class="navbar-item"
@@ -94,6 +98,15 @@ export default {
     return {
       isMenuOpen: false,
     }
+  },
+  methods: {
+    goTop() {
+      const top = document.documentElement.scrollTop || document.body.scrollTop
+      if (top > 0) {
+        window.requestAnimationFrame(this.goTop)
+        window.scrollTo(0, top - top / 8)
+      }
+    },
   },
 }
 </script>
@@ -162,7 +175,7 @@ export default {
       margin-right: 8px;
     }
     &.is-active {
-      height: calc(48px * 5);
+      height: calc(48px * 4);
     }
     .navbar-item {
       display: inline-block;
