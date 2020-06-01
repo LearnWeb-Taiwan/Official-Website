@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: '404',
+  name: 'error',
   components: {},
 }
 </script>
