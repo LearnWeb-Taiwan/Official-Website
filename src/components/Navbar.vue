@@ -33,7 +33,7 @@
         <i class="icon fab fa-github"></i>GitHub
       </a>
       <a
-        href="https://github.com/LearnWeb-Taiwan"
+        href="https://www.facebook.com/groups/LearnWeb.Taiwan"
         class="navbar-item"
         target="_blank"
         ref="noopener"
