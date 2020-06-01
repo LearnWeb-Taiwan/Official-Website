@@ -11,11 +11,11 @@
           想要找到一群能夠一起討論網頁技術的開發者？
         </p>
         <br />
-        <div class="banner-btn">
+        <router-link to="/activities" class="banner-btn">
           加入我們
           <i class="icon fas fa-door-open"></i>
           <i class="icon fas fa-door-closed"></i>
-        </div>
+        </router-link>
         <br />
       </div>
       <pic-slider :imageSet="sliderImage" :slideSec="2" :needAutoSlide="true" />
