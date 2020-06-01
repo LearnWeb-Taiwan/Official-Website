@@ -130,7 +130,6 @@ export default {
       let formatDate = new Date(
         +new Date(date) + +8 * 3600 * 1000
       ).toISOString()
-      console.log(formatDate)
       return formatDate.slice(0, 10) + ' ' + formatDate.slice(11, 19)
     },
   },
