@@ -42,7 +42,6 @@ export default {
   methods: {
     getScrollTop() {
       this.scrollTop = window.scrollY
-      console.log(this.scrollTop)
     },
     goTop() {
       const top = document.documentElement.scrollTop || document.body.scrollTop
