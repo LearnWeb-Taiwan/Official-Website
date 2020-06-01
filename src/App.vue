@@ -4,10 +4,19 @@
       <learnweb-navbar />
     </div>
     <main class="app-main-wrapper">
-      <router-view />
+      <transition name="fade">
+        <router-view />
+      </transition>
     </main>
     <div class="app-footer-wrapper">
       <learnweb-footer />
+    </div>
+    <div
+      class="app-controller-wrapper"
+      @click="goTop()"
+      :class="{ active: scrollTop > 30 }"
+    >
+      <i class="icon fas fa-angle-up"></i>
     </div>
   </div>
 </template>
@@ -21,6 +30,27 @@ export default {
   components: {
     learnwebNavbar,
     learnwebFooter,
+  },
+  data() {
+    return {
+      scrollTop: 0,
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', () => this.getScrollTop())
+  },
+  methods: {
+    getScrollTop() {
+      this.scrollTop = window.scrollY
+      console.log(this.scrollTop)
+    },
+    goTop() {
+      const top = document.documentElement.scrollTop || document.body.scrollTop
+      if (top > 0) {
+        window.requestAnimationFrame(this.goTop)
+        window.scrollTo(0, top - top / 8)
+      }
+    },
   },
 }
 </script>
@@ -39,5 +69,40 @@ body {
   .app-main-wrapper {
     padding-top: 48px;
   }
+}
+
+.app-controller-wrapper {
+  position: fixed;
+  z-index: 10;
+  bottom: 24px;
+  right: 24px;
+  transition: 1s;
+  transform: translateX(200px);
+  &.active {
+    transform: translateX(0px);
+  }
+  .icon {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 36px;
+    line-height: 40px;
+    color: #4f74af;
+    background: white;
+    border: 4px solid #4f74af;
+    border-radius: 50%;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.5s;
+  height: auto;
+}
+.fade-enter,
+.fade-leave-to {
+  transform: translateY(-12px);
+  opacity: 0;
+  max-height: 0;
 }
 </style>
