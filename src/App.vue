@@ -24,6 +24,7 @@
 // @ is an alias to /src
 import learnwebNavbar from './components/Navbar'
 import learnwebFooter from './components/Footer'
+import { mapState } from 'vuex'
 
 export default {
   name: 'App',
@@ -31,17 +32,14 @@ export default {
     learnwebNavbar,
     learnwebFooter,
   },
-  data() {
-    return {
-      scrollTop: 0,
-    }
-  },
+  computed: mapState(['scrollTop']),
+
   mounted() {
-    window.addEventListener('scroll', () => this.getScrollTop())
+    window.addEventListener('scroll', () => this.setScrollTop())
   },
   methods: {
-    getScrollTop() {
-      this.scrollTop = window.scrollY
+    setScrollTop() {
+      this.$store.dispatch('setScrollTop', window.scrollY)
     },
     goTop() {
       const top = document.documentElement.scrollTop || document.body.scrollTop
@@ -100,7 +98,7 @@ body {
 }
 .fade-enter,
 .fade-leave-to {
-  transform: translateY(-12px);
+  transform: translateX(-24px);
   opacity: 0;
   max-height: 0;
 }
