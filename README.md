@@ -9,7 +9,6 @@
 ## PR
 暫不接受 PR 敬請見諒，待 Testing/CI 相關部屬完成後會立即開放。
 
-
 ## License
 
 [MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE)
@@ -30,3 +29,13 @@ Copyright (c) 2020-present, LearnWeb Taiwan
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+
+<!--
+## 技術線
+前端：Vue-cli
+主機端：GitHub Server（GitHub Page）
+Domain：Gandi
+CDN：Cloudflare
+SSL/TLS：Cloudflare
+-->
