@@ -10,7 +10,7 @@
 - [臉書社團](https://www.facebook.com/groups/LearnWeb.Taiwan)
 
 ## PR
-暫不接受 PR 敬請見諒，待 Testing/CI 相關部屬完成後會立即開放。
+待 Testing/CI 相關部屬完成後會立即開放。
 
 ## License
 
