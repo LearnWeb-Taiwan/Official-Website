@@ -6,7 +6,8 @@
 
 <!--[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)-->
 
-[官方網站](https://learnweb.tw/)
+- [官方網站](https://learnweb.tw/)
+- [臉書社團](https://www.facebook.com/groups/LearnWeb.Taiwan)
 
 ## PR
 暫不接受 PR 敬請見諒，待 Testing/CI 相關部屬完成後會立即開放。
