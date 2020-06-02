@@ -1,0 +1,177 @@
+[
+  {
+		"id": 1,
+    "title": "類別、函式、迴圈、判斷流程的基礎用法",
+		"type": "技術講座",
+		"tag": ["JavaScript"],
+    "date": "2019-11-09T11:00:00",
+		"content": "JavaScript 類別、函式、迴圈、判斷流程介紹，並且練習實作九九乘法表。",
+		"previewImage": null,
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "COFFeee",
+      "address": "新北市板橋區館前東路39號1",
+      "website": "https://www.facebook.com/drinkCoffeee/",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": null,
+    "presentation": null
+  },
+  {
+		"id": 2,
+    "title": "動手做一個 Bootstrap 元件",
+		"type": "工作坊",
+		"tag": ["HTML", "CSS", "JavaScript"],
+    "date": "2019-11-17T11:00:00",
+		"content": "Bootstrap 工作坊，透過實作 Bootstrap 元件來認識 JavaScript 中 DOM 與 BOM 的概念。",
+		"previewImage": null,
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": null,
+    "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vSOerebno46R47sUhEw3eC2ehJEAUMet_MqWDWTUjtkAaG7g02mWtvct0iIyrQWG5ETkPTDtEMPnh_P/pub?start=false&loop=false&delayms=60000&slide=id.p"
+  },
+  {
+		"id": 3,
+    "title": "自己實作一個 Bootstrap 元件樣式",
+		"type": "工作坊",
+		"tag": ["SCSS", "JavaScript"],
+    "date": "2019-11-24T11:00:00",
+		"content": "透過實作 Bootstrap 元件來認識 SCSS，並開發屬於自己的樣式表。",
+		"previewImage": null,
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-003",
+    "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vRrajKCE7pUJKOPBY-mwJpy2OH1HmXxB1tHpxZxYP81Dtq4jdFs-hCHR8uSb6U1UZQO6_ThR8NHG-0s/pub?start=false&loop=false&delayms=60000"
+  },
+  {
+		"id": 4,
+    "title": "喝杯 Mocha 工作坊",
+		"type": "工作坊",
+		"tag": ["Testing", "Mocha", "JavaScript"],
+    "date": "2019-12-07T11:00:00",
+		"content": "以 TDD 開發思維，使用 Mocha.js 來撰寫測試程式碼；並透過 Travis CI 部屬來執行自動化測試。",
+		"previewImage": "https://t.kfs.io/upload_images/105445/003_large.png",
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-004-mocha",
+    "presentation": "https://docs.google.com/presentation/d/e/2PACX-1vT-o15xnGsLCU8RsSV7GmtQpiweHO1fn4tvHoVAn70Z5Ry5_BN6tCaFAiYIOcnx1rHzRdcPCNpR7_Bx/pub?start=false&loop=false&delayms=60000"
+  },
+  {
+		"id": 5,
+    "title": "打造屬於自己的人生跑馬燈",
+		"type": "工作坊",
+		"tag": ["HTML", "CSS", "jQuery"],
+    "date": "2020-01-04T11:00:00",
+		"content": "CSS 及 jQuery 的基礎入門及自我搜尋資源分享。",
+		"previewImage": "https://t.kfs.io/upload_images/107712/005_large.png",
+    "speaker": {
+			"name": "Saplin",
+			"image": "https://avatars3.githubusercontent.com/u/48585454?s=460&v=4",
+			"facebook": null,
+      "website": null,
+      "github": "https://github.com/saplingt"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-005-css-jquery",
+    "presentation": "https://docs.google.com/presentation/d/1NwEgmGivyoXqvK7QqFCSgzaLqs9iauAzUBl0UZgNkpo"
+  },
+  {
+		"id": 6,
+		"title": "過年前要不要來一份 Git 全家桶？",
+		"tag": ["Git", "GitHub", "Git GUI"],
+    "type": "工作坊",
+    "date": "2020-01-18T11:00:00",
+		"content": "瞭解 Git、GitHub、GitHub Desktop 的差別與用法。",
+		"previewImage": "https://t.kfs.io/upload_images/108565/006_large.png",
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-006-git",
+		"presentation": "https://docs.google.com/presentation/d/e/2PACX-1vRTyoSjBsGDaCfRkC-U-YVQX6YICKAcxnHxYrROkUFN1FAlklzrfvwqOeeSU8DjvgIlGgkJQPDhJEQ0/pub?start=false&loop=false&delayms=60000&slide=id.g6d9008046c_0_0"
+  },
+  {
+		"id": 7,
+		"title": "從命名來提升專案品質",
+		"tag": ["Methodolofy", "CSS", "JavaScript"],
+    "type": "技術講座",
+    "date": "2020-05-23T11:00:00",
+		"content": "從專案到 CSS、JavaScript 中各種命名情境、陷阱與心得。",
+		"previewImage": "https://t.kfs.io/upload_images/111474/007-kktix_large.png",
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-007-naming-is-easier-than-you-think",
+		"presentation": "https://docs.google.com/presentation/d/e/2PACX-1vQou__qYMEEyGws93wsXTB40LviiHQm3WjeCxllDTaO9SZFpD3_FYlIYMAaQSES8c9qTKgxykFeFPmA/pub?start=false&loop=false&delayms=60000"
+  }
+]
