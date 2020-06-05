@@ -26,6 +26,20 @@
   </a>
 </p>
 
+<h2 align="center"> Client server </h2>
+
+本專案支持客戶端開啟應用程式，請於 Node.js [官網](https://nodejs.org/en/) 下載 Node.js，並把此專案 clone 到目錄後於該目錄執行：
+
+```cmd
+npm install
+```
+
+待安裝完相依套件後執行：
+
+```cmd
+npm run serve
+```
+即可於相對應的埠號開啟網站。
 
 <h2 align="center"> Pull Request </h2>
 
@@ -36,9 +50,21 @@
 - Testing Utils：Vue-test-utils
 - CI：Travis CI
 
-<h2> 發送流程 </h2>
+<h3> 發送流程 </h3>
 
-一律發送 PR 至 `develop` 支線，待 Travis CI 測試完畢並通過後，會有專人負責處理合併。
+一律發送 PR 至 `develop` 支線，待 Travis CI 測試完畢並通過後，會有專人負責處理合併，建議可先本地端執行測試後再發送。
+
+單元測試：
+```cmd
+npm run test:unit
+```
+
+端對端測試：
+```cmd
+npm run test:unit
+```
+
+<h3> 發送類別 </h3>
 
 - `Fix` 類請於 commit 紀錄附上解決事項即可。
 - `Features` 類需附上可供測試之程式碼。
