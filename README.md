@@ -1,8 +1,4 @@
-# LearnWeb-Taiwan Official Website
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
- ALL-CONTRIBUTORS-BADGE:END -->
+<h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
 <p align="center">
   <a href="https://travis-ci.org/LearnWeb-Taiwan/Official-Website"><img src="https://travis-ci.org/LearnWeb-Taiwan/Official-Website.svg?branch=master" alt="Build Status"></a>
@@ -10,8 +6,10 @@
   <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors"></a>
 </p>
 
-- [官方網站](https://learnweb.tw/)
-- [臉書社團](https://www.facebook.com/groups/LearnWeb.Taiwan)
+<p align="center">
+  <a href="https://learnweb.tw/">官方網站</a> |
+  <a href="https://www.facebook.com/groups/LearnWeb.Taiwan">臉書社團</a>
+</p>
 
 ## PR
 待 Testing/CI 相關部屬完成後會立即開放。
