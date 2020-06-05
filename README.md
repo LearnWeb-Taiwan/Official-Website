@@ -17,7 +17,7 @@
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 <p align="center">
-  LearbWeb-Taiwan 官方網站，提供<b>形象介紹</b>、<b>歷屆活動報名</b>及<b>贊助商列表</b>等服務。
+  <b>LearbWeb-Taiwan</b> 官方網站，提供 <b>形象介紹</b> 、 <b>歷屆活動報名</b> 及 <b>贊助商列表</b> 等服務。
 </p>
 
 <p align="center">
