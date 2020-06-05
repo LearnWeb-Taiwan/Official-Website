@@ -28,7 +28,7 @@
 
 <h2 align="center"> Client server </h2>
 
-本專案支持客戶端開啟應用程式，請於 Node.js [官網](https://nodejs.org/en/) 下載 Node.js，並把此專案 clone 到目錄後於該目錄執行：
+本專案支持客戶端開啟應用程式，請於 Node.js [官網](https://nodejs.org/en/) 下載 Node.js，並把此專案 clone 到資料夾目錄後於該目錄執行：
 
 ```cmd
 npm install
