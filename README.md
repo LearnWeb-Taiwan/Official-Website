@@ -85,6 +85,7 @@ npm run test:unit
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <h2 align="center"> License </h2>
+
 本專案程式碼採用 [MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE) 之授權，但內部圖片、照片仍具有肖像權，須各別向其所有人告知並取得同意後方能公開使用。
 
 <!--
