@@ -20,6 +20,12 @@
   LearbWeb-Taiwan 官方網站，提供<b>形象介紹</b>、<b>歷屆活動報名</b>及<b>贊助商列表</b>等服務。
 </p>
 
+<p align="center">
+  <a href="https://learnweb.tw/" target="_blank" rel="noopener noreferrer">
+    <img width="500" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/official-website/LearbWeb-OfficialWebsite.png?raw=true" alt="LearnWeb Taiwan Official Website">
+  </a>
+</p>
+
 
 <h2 align="center"> Pull Request </h2>
 
