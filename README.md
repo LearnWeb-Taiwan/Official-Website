@@ -1,4 +1,8 @@
-<p align="center"><a href="https://learnweb.tw/" target="_blank" rel="noopener noreferrer"><img width="500" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true" alt="LearnWeb Taiwan logo"></a></p>
+<p align="center">
+  <a href="https://learnweb.tw/" target="_blank" rel="noopener noreferrer">
+    <img width="500" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true" alt="LearnWeb Taiwan logo">
+  </a>
+</p>
 
 <p align="center">
   <a href="https://travis-ci.org/LearnWeb-Taiwan/Official-Website"><img src="https://travis-ci.org/LearnWeb-Taiwan/Official-Website.svg?branch=master" alt="Build Status"></a>
@@ -13,13 +17,21 @@
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
+LearnWeb-Taiwan Official Website 為 LearbWeb-Taiwan 主要官方網站，目的在於提供形象介紹、歷屆活動報名及贊助商列表等服務。
+
 ---
 
-<h2 align="center"> PR </h2>
-
-> 待 Testing/CI 相關部屬完成後會立即開放。
-- Testing：Jest, Vue-test-utils
+<h2 align="center"> 提交 PR </h2>
+- Unit testing：Jest
+- E2E testing：Nightwatch
+- Testing Utils：Vue-test-utils
 - CI：Travis CI
+
+#### 流程
+- Bug Fix：Fork 資料後將要提交的內容發送 PR 至 develop 支線，發送後待 Travis CI 測試完畢並通過後，會有專人負責處理合併。
+- Features：Fork 資料後將要提交的內容發送 PR 至 develop 支線，並且提交對應的測試內容，發送後待 Travis CI 測試完畢並通過後，會有專人負責合併。
+
+
 
 
 
