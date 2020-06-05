@@ -16,9 +16,9 @@
 </p>
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
-
-LearbWeb-Taiwan 官方網站，提供**形象介紹**、**歷屆活動報名**及**贊助商列表**等服務。
-
+<p align="center">
+  LearbWeb-Taiwan 官方網站，提供<b>形象介紹</b>、<b>歷屆活動報名</b>及<b>贊助商列表</b>等服務。
+</p>
 ---
 
 <h2 align="center"> Pull Request </h2>
