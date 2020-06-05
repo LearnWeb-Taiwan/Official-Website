@@ -13,10 +13,12 @@
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
-## PR
+<h2 align="center"> PR </h2>
+Testing Framwork：Jest
+Testing CI：Travis CI
 待 Testing/CI 相關部屬完成後會立即開放。
 
-## License
+<h2 align="center"> License </h2>
 
 [MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE)
 
