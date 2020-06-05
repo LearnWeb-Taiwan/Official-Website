@@ -1,4 +1,4 @@
-<h1 align="center"> LearnWeb-Taiwan Official Website </h1>
+<p align="center"><a href="https://learnweb.tw/" target="_blank" rel="noopener noreferrer"><img width="500" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true" alt="LearnWeb Taiwan logo"></a></p>
 
 <p align="center">
   <a href="https://travis-ci.org/LearnWeb-Taiwan/Official-Website"><img src="https://travis-ci.org/LearnWeb-Taiwan/Official-Website.svg?branch=master" alt="Build Status"></a>
@@ -10,6 +10,8 @@
   <a href="https://learnweb.tw/">官方網站</a> |
   <a href="https://www.facebook.com/groups/LearnWeb.Taiwan">臉書社團</a>
 </p>
+
+<h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
 ## PR
 待 Testing/CI 相關部屬完成後會立即開放。
