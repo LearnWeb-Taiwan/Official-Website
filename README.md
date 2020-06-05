@@ -19,16 +19,21 @@
 <p align="center">
   LearbWeb-Taiwan 官方網站，提供<b>形象介紹</b>、<b>歷屆活動報名</b>及<b>贊助商列表</b>等服務。
 </p>
----
+
 
 <h2 align="center"> Pull Request </h2>
+
+為提升網站維護性，本專案採用下列測試與整合技術以利將來的開發與重構：
+
 - Unit testing：Jest
 - E2E testing：Nightwatch
 - Testing Utils：Vue-test-utils
 - CI：Travis CI
 
-#### Process
+#### 流程
+
 一律發送 PR 至 `develop` 支線，待 Travis CI 測試完畢並通過後，會有專人負責處理合併。
+
 - `Fix` 類請於 commit 紀錄附上解決事項即可。
 - `Features` 類需附上可供測試之程式碼。
 
