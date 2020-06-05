@@ -1,9 +1,10 @@
 # LearnWeb-Taiwan Official Website
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-<!--[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)-->
+[![Build Status](https://travis-ci.org/LearnWeb-Taiwan/Official-Website.svg?branch=master)](https://travis-ci.org/LearnWeb-Taiwan/Official-Website) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 - [官方網站](https://learnweb.tw/)
 - [臉書社團](https://www.facebook.com/groups/LearnWeb.Taiwan)
