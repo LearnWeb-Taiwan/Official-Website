@@ -13,11 +13,15 @@
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
+---
+
 <h2 align="center"> PR </h2>
 
 > 待 Testing/CI 相關部屬完成後會立即開放。
 - Testing：Jest, Vue-test-utils
 - CI：Travis CI
+
+---
 
 <h2 align="center"> License </h2>
 
@@ -25,7 +29,9 @@
 
 Copyright (c) 2020-present, LearnWeb Taiwan
 
-## Contributors 
+---
+
+<h2 align="center"> Contributors </h2>
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
