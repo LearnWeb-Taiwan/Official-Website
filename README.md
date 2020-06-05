@@ -30,7 +30,7 @@
 - Testing Utils：Vue-test-utils
 - CI：Travis CI
 
-#### 流程
+<h2> 發送流程 </h2>
 
 一律發送 PR 至 `develop` 支線，待 Travis CI 測試完畢並通過後，會有專人負責處理合併。
 
