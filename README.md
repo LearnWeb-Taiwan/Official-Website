@@ -17,7 +17,7 @@
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
-LearnWeb-Taiwan Official Website 為 LearbWeb-Taiwan 主要官方網站，目的在於提供**形象介紹**、**歷屆活動報名**及**贊助商列表**等服務。
+LearbWeb-Taiwan 官方網站，提供**形象介紹**、**歷屆活動報名**及**贊助商列表**等服務。
 
 ---
 
