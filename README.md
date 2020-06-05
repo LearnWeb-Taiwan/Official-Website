@@ -14,9 +14,10 @@
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
 
 <h2 align="center"> PR </h2>
-Testing Framwork：Jest
-Testing CI：Travis CI
-待 Testing/CI 相關部屬完成後會立即開放。
+
+> 待 Testing/CI 相關部屬完成後會立即開放。
+- Testing：Jest, Vue-test-utils
+- CI：Travis CI
 
 <h2 align="center"> License </h2>
 
