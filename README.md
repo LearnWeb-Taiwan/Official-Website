@@ -21,7 +21,7 @@
 - Testing：Jest, Vue-test-utils
 - CI：Travis CI
 
----
+
 
 <h2 align="center"> License </h2>
 
@@ -29,7 +29,7 @@
 
 Copyright (c) 2020-present, LearnWeb Taiwan
 
----
+
 
 <h2 align="center"> Contributors </h2>
 
