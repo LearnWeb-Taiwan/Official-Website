@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://learnweb.tw/" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/LearnWeb-Taiwan" target="_blank" rel="noopener noreferrer">
     <img width="500" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true" alt="LearnWeb Taiwan logo">
   </a>
 </p>
