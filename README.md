@@ -69,14 +69,6 @@ npm run test:unit
 - `Fix` 類請於 commit 紀錄附上解決事項即可。
 - `Features` 類需附上可供測試之程式碼。
 
-<h2 align="center"> License </h2>
-
-[MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE)
-
-Copyright (c) 2020-present, LearnWeb Taiwan
-
-
-
 <h2 align="center"> Contributors </h2>
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -92,6 +84,8 @@ Copyright (c) 2020-present, LearnWeb Taiwan
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+<h2 align="center"> License </h2>
+本專案程式碼採用 [MIT](https://github.com/LearnWeb-Taiwan/Official-Website/blob/master/LICENSE) 之授權，但內部圖片、照片仍具有肖像權，須各別向其所有人告知並取得同意後方能公開使用。
 
 <!--
 ## 技術線
