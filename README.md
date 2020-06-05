@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://travis-ci.org/LearnWeb-Taiwan/Official-Website"><img src="https://travis-ci.org/LearnWeb-Taiwan/Official-Website.svg?branch=master" alt="Build Status"></a>
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a>
-  <a href="#contributors-"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors"></a>
+  <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" alt="All Contributors"></a>
 </p>
 
 - [官方網站](https://learnweb.tw/)
