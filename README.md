@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="https://learnweb.tw/" target="_blank" rel="noopener noreferrer">
-    <img width="500" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/official-website/LearbWeb-OfficialWebsite.png?raw=true" alt="LearnWeb Taiwan Official Website">
+    <img width="300" src="https://github.com/LearnWeb-Taiwan/Assets/blob/master/official-website/LearbWeb-OfficialWebsite.png?raw=true" alt="LearnWeb Taiwan Official Website">
   </a>
 </p>
 
