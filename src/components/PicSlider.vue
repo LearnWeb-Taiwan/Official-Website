@@ -6,7 +6,7 @@
         v-for="(imageSrc, imageIndex) in imageSet"
         :key="imageSrc"
         :src="imageSrc"
-        :alt="imageIndex"
+        alt="slide-img"
         :style="{ transition: slideSec + 's' }"
       />
     </div>
