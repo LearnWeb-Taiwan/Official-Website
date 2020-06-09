@@ -173,5 +173,30 @@
     },
     "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-007-naming-is-easier-than-you-think",
 		"presentation": "https://docs.google.com/presentation/d/e/2PACX-1vQou__qYMEEyGws93wsXTB40LviiHQm3WjeCxllDTaO9SZFpD3_FYlIYMAaQSES8c9qTKgxykFeFPmA/pub?start=false&loop=false&delayms=60000"
+  },
+  {
+		"id": 8,
+		"title": "邁向忍者之路",
+		"tag": ["Career", "Learning"],
+    "type": "技術講座",
+    "date": "2020-06-13T11:00:00",
+		"content": "學海無涯，初入程式相關領域，總覺得自己好像學了很多東西，卻又好像很多東西沒學？\n一轉眼的時間，舊的工具還沒學會，社群卻又開始推陳出新？\n根本就學不完阿！我到底要從哪裡開始？",
+		"previewImage": "https://t.kfs.io/upload_images/111963/____large.png",
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-008-road-to-ninja",
+		"presentation": "https://docs.google.com/presentation/d/e/2PACX-1vROqpnCjM4VcY6JgXpD-RxCCf3gWAnKbCRt011eBYMgt86boqNhqScolEKfz4gVXmazuCwuDXZyGmLt/pub?start=false&loop=false&delayms=60000"
   }
 ]
