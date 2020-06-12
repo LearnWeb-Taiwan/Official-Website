@@ -56,7 +56,7 @@
 		"tag": ["SCSS", "JavaScript"],
     "date": "2019-11-24T11:00:00",
 		"content": "透過實作 Bootstrap 元件來認識 SCSS，並開發屬於自己的樣式表。",
-		"previewImage": null,
+		"previewImage": "https://t.kfs.io/upload_images/105445/003_large.png",
     "speaker": {
 			"name": "Shawn Lin",
 			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
@@ -81,7 +81,7 @@
 		"tag": ["Testing", "Mocha", "JavaScript"],
     "date": "2019-12-07T11:00:00",
 		"content": "以 TDD 開發思維，使用 Mocha.js 來撰寫測試程式碼；並透過 Travis CI 部屬來執行自動化測試。",
-		"previewImage": "https://t.kfs.io/upload_images/105445/003_large.png",
+		"previewImage": "https://t.kfs.io/upload_images/105984/004_large.png",
     "speaker": {
 			"name": "Shawn Lin",
 			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
