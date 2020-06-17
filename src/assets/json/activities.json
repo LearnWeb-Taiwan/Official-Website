@@ -198,5 +198,30 @@
     },
     "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taipei-008-road-to-ninja",
 		"presentation": "https://docs.google.com/presentation/d/e/2PACX-1vROqpnCjM4VcY6JgXpD-RxCCf3gWAnKbCRt011eBYMgt86boqNhqScolEKfz4gVXmazuCwuDXZyGmLt/pub?start=false&loop=false&delayms=60000"
+  },
+  {
+		"id": 9,
+		"title": "Clean Code 導讀：為何我們需要 Clean Code？",
+		"tag": ["Book", "Learning"],
+    "type": "讀書會",
+    "date": "2020-06-21T11:00:00",
+		"content": "由 Robert C. Martin 所撰寫的 Clean Code，從不同的原則、模式與實作，再到實際重構、啟發，一步一腳印的帶領我們認識何謂 Clean Code。那麼，我們自己又是如何看待的呢？",
+		"previewImage": "https://t.kfs.io/upload_images/112175/pg21219__1__large.jpg",
+    "speaker": {
+			"name": "Shawn Lin",
+			"image": "https://avatars1.githubusercontent.com/u/45999699?s=460&u=c4bd78c523b04e703abf6697d9c3160bafc2be39&v=4",
+			"facebook": "https://www.facebook.com/profile.php?id=100004228181424",
+      "website": "https://shawnlin0201.github.io",
+      "github": "https://github.com/shawnlin0201"
+    },
+    "location": {
+      "name": "科技大樓",
+      "address": "復興南路二段200號6樓-602室",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taiwan-book-cleancode-001",
+		"presentation": ""
   }
 ]
