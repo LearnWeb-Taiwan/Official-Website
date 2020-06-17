@@ -240,13 +240,13 @@ export default {
     }
     .card-type {
       position: absolute;
-      bottom: 0;
-      left: 12px;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
+      top: 0;
+      right: 16px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
       font-family: 'Noto_Sans_TC';
       padding: 6px;
-      background: black;
+      background: #0008;
       color: #fafafa;
     }
     .card-btn {
