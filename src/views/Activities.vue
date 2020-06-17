@@ -210,7 +210,7 @@ export default {
       .card-title {
         font-size: 20px;
         margin-bottom: 12px;
-        color: #4f74af;
+        color: #456497;
         font-family: Helvetica, Noto_Sans_TC;
         line-height: 24px;
       }
