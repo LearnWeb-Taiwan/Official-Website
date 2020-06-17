@@ -143,20 +143,22 @@ export default {
 .history-activities-wrapper {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  justify-items: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   .activity-card {
-    max-width: 300px;
-    margin: 8px;
+    overflow: hidden;
+    max-width: 320px;
+    margin: 0 24px 24px;
     background: white;
-    box-shadow: 0 2px 2px 0 #0008;
+    box-shadow: 0 8px 24px 0 #0005;
     border-radius: 4px;
-    transition: 0.2s;
-    flex-basis: 300px;
+    transition: 0.5s;
+    flex-basis: 320px;
     flex-grow: 1;
     &:hover {
-      box-shadow: 0 6px 4px 0 #0008;
+      box-shadow: 0 20px 40px 0 #0006;
     }
     .card-header {
       position: relative;
@@ -171,7 +173,7 @@ export default {
       }
     }
     .card-body {
-      padding: 12px 12px 0;
+      padding: 16px 16px 0;
       .card-speaker {
         display: flex;
         margin-bottom: 12px;
@@ -179,8 +181,8 @@ export default {
           display: inline-block;
           vertical-align: top;
           border-radius: 50%;
-          width: 36px;
-          height: 36px;
+          width: 40px;
+          height: 40px;
           object-fit: cover;
           margin-right: 12px;
         }
@@ -206,23 +208,24 @@ export default {
         }
       }
       .card-title {
-        font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 12px;
+        color: #4f74af;
+        font-family: Helvetica, Noto_Sans_TC;
+        line-height: 24px;
       }
       .card-content {
-        min-height: 72px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         line-height: 24px;
+        font-size: 14px;
       }
       .card-tag {
         display: inline-block;
-        border: 2px solid black;
+        border: 1px solid black;
         padding: 4px;
         font-size: 12px;
-        font-weight: bold;
         border-radius: 2px;
-        margin-right: 4px;
+        margin-right: 8px;
         margin-bottom: 8px;
       }
       .card-info {
@@ -251,7 +254,7 @@ export default {
         display: block;
         padding: 12px;
         text-align: center;
-        background: #64c025;
+        background: #4f74af;
         color: white;
         cursor: pointer;
         &.disable {
