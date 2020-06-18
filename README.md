@@ -12,7 +12,8 @@
 
 <p align="center">
   <a href="https://learnweb.tw/">官方網站</a> |
-  <a href="https://www.facebook.com/groups/LearnWeb.Taiwan">臉書社團</a>
+  <a href="https://www.facebook.com/groups/LearnWeb.Taiwan">臉書社團</a> |  
+  <a href="https://gitter.im/LearnWeb-Taiwan/community#">聊天室</a>
 </p>
 
 <h1 align="center"> LearnWeb-Taiwan Official Website </h1>
