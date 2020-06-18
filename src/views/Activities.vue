@@ -1,109 +1,122 @@
 <template>
-  <div class="activities-wrapper">
+  <div class="activities-page-wrapper">
     <!-- banner wrapper start-->
     <section class="banner-wrapper"></section>
     <!-- banner wrapper end-->
-    <!-- card wrapper start-->
-    <section class="history-activities-wrapper">
-      <div
-        class="activity-card"
-        v-for="activity in activities"
-        :key="activity.id"
-      >
-        <div class="card-header">
-          <img
-            class="card-image"
-            :src="
-              activity.previewImage ||
-              'https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true'
-            "
-            :alt="activity.title"
-          />
-          <div class="card-type">{{ activity.type }}</div>
+
+    <!-- activities wrapper start-->
+    <div class="activities-wrapper">
+      <!-- activities filter wrapper start-->
+      <div class="activities-filter-wrapper">
+        <div class="filter-controller">
+          test
         </div>
-        <div class="card-body">
-          <div class="card-speaker">
+      </div>
+      <!-- activities filter wrapper end-->
+
+      <!-- activities card wrapper start-->
+      <section class="activities-card-wrapper">
+        <div
+          class="activity-card"
+          v-for="activity in activities"
+          :key="activity.id"
+        >
+          <div class="card-header">
             <img
-              class="speaker-image"
-              :src="activity.speaker.image"
-              :alt="activity.speaker.name"
+              class="card-image"
+              :src="
+                activity.previewImage ||
+                'https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true'
+              "
+              :alt="activity.title"
             />
-            <div class="speaker-info">
-              <div class="speaker-name">{{ activity.speaker.name }}</div>
-              <div class="speaker-link">
-                <template v-if="activity.speaker.facebook">
-                  <a
-                    class="facebook"
-                    :href="activity.speaker.facebook"
-                    target="_blank"
-                    ref="noopener"
-                    alt="facebook"
-                  >
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </template>
-                <template v-if="activity.speaker.website">
-                  <a
-                    class="website"
-                    :href="activity.speaker.website"
-                    target="_blank"
-                    ref="noopener"
-                    alt="personal website"
-                  >
-                    <i class="fas fa-columns"></i>
-                  </a>
-                </template>
-                <template v-if="activity.speaker.github">
-                  <a
-                    class="github"
-                    :href="activity.speaker.github"
-                    target="_blank"
-                    ref="noopener"
-                    alt="GitHub Pages"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </template>
+            <div class="card-type">{{ activity.type }}</div>
+          </div>
+          <div class="card-body">
+            <div class="card-speaker">
+              <img
+                class="speaker-image"
+                :src="activity.speaker.image"
+                :alt="activity.speaker.name"
+              />
+              <div class="speaker-info">
+                <div class="speaker-name">{{ activity.speaker.name }}</div>
+                <div class="speaker-link">
+                  <template v-if="activity.speaker.facebook">
+                    <a
+                      class="facebook"
+                      :href="activity.speaker.facebook"
+                      target="_blank"
+                      ref="noopener"
+                      alt="facebook"
+                    >
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </template>
+                  <template v-if="activity.speaker.website">
+                    <a
+                      class="website"
+                      :href="activity.speaker.website"
+                      target="_blank"
+                      ref="noopener"
+                      alt="personal website"
+                    >
+                      <i class="fas fa-columns"></i>
+                    </a>
+                  </template>
+                  <template v-if="activity.speaker.github">
+                    <a
+                      class="github"
+                      :href="activity.speaker.github"
+                      target="_blank"
+                      ref="noopener"
+                      alt="GitHub Pages"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </template>
+                </div>
+              </div>
+            </div>
+            <h2 class="card-title">{{ activity.title }}</h2>
+            <div class="card-tag" v-for="tag in activity.tag" :key="tag">
+              {{ tag }}
+            </div>
+            <div class="card-content">
+              {{ activity.content }}
+            </div>
+            <div class="card-info">
+              <div class="card-location">
+                <div class="name">{{ activity.location.name }}</div>
+                <!-- <div class="address">{{ activity.location.address }}</div> -->
+              </div>
+              <div class="card-date">
+                {{ formatDate(activity.date) }}
               </div>
             </div>
           </div>
-          <h2 class="card-title">{{ activity.title }}</h2>
-          <div class="card-tag" v-for="tag in activity.tag" :key="tag">
-            {{ tag }}
-          </div>
-          <div class="card-content">
-            {{ activity.content }}
-          </div>
-          <div class="card-info">
-            <div class="card-location">
-              <div class="name">{{ activity.location.name }}</div>
-              <!-- <div class="address">{{ activity.location.address }}</div> -->
-            </div>
-            <div class="card-date">
-              {{ formatDate(activity.date) }}
-            </div>
+          <div class="card-btn">
+            <template v-if="new Date() > new Date(activity.date)">
+              <div class="link disable">活動已結束</div>
+            </template>
+            <template v-else-if="activity.ticket">
+              <a
+                class="link"
+                :href="activity.ticket"
+                target="_blank"
+                ref="noopener"
+                >報名活動</a
+              >
+            </template>
+            <template v-else>
+              <div class="link disable">該活動未提供售票</div>
+            </template>
           </div>
         </div>
-        <div class="card-btn">
-          <template v-if="new Date() > new Date(activity.date)">
-            <div class="link disable">活動已結束</div>
-          </template>
-          <template v-else-if="activity.ticket">
-            <a
-              class="link"
-              :href="activity.ticket"
-              target="_blank"
-              ref="noopener"
-              >報名活動</a
-            >
-          </template>
-          <template v-else>
-            <div class="link disable">該活動未提供售票</div>
-          </template>
-        </div>
-      </div>
-    </section>
-    <!-- card wrapper end-->
+      </section>
+      <!-- activities card wrapper end-->
+    </div>
+    <!-- activities wrapper end-->
   </div>
 </template>
 <script>
@@ -137,10 +150,34 @@ export default {
 </script>
 
 <style lang="scss">
-.activities-wrapper {
+.activities-page-wrapper {
   font-family: 'Noto_Sans_TC';
 }
-.history-activities-wrapper {
+
+.activities-wrapper {
+  display: flex;
+}
+
+@media screen and (max-width: 630px) {
+  .activities-wrapper {
+    flex-direction: column;
+  }
+}
+
+.activities-filter-wrapper {
+  position: relative;
+  flex-basis: 320px;
+  border-right: 1px solid black;
+  .filter-controller {
+    position: absolute;
+    top: 24px;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 4px 0 #0008;
+  }
+}
+
+.activities-card-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -150,7 +187,7 @@ export default {
   .activity-card {
     overflow: hidden;
     max-width: 320px;
-    margin: 0 24px 24px;
+    margin: 24px 24px;
     background: white;
     box-shadow: 0 8px 24px 0 #0005;
     border-radius: 4px;
@@ -267,9 +304,11 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-  .history-activities-wrapper {
+  .activities-card-wrapper {
     .activity-card {
-      max-width: 100%;
+      width: 100%;
+      min-width: 300px;
+      max-width: 450px;
     }
   }
 }
