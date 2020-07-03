@@ -101,9 +101,9 @@ export default {
     return {
       sliderImage: [
         './images/cover.jpg',
-        './images/20191114.jpg',
+        './images/20200621.jpg',
         './images/20191117.jpg',
-        './images/20200523.jpg',
+        './images/20191114.jpg',
       ],
     }
   },
