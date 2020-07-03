@@ -217,11 +217,36 @@
     "location": {
       "name": "科技大樓",
       "address": "復興南路二段200號6樓-602室",
-      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "website": "",
       "lat": null,
       "lng": null
     },
     "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taiwan-book-cleancode-001",
+		"presentation": ""
+  },
+  {
+		"id": 10,
+		"title": "Clean Code ：名副其實的命名！",
+		"tag": ["Book", "Learning"],
+    "type": "讀書會",
+    "date": "2020-07-04T11:00:00",
+		"content": "至上次導讀後，我們這次要來講講 Clean Code 中的命名，命名一直是工程師最難解的問題之一。這天我們要來談談 Clean Code 對於命名的想法，以及實作上所真正會遇到的問題又該如何解決？",
+		"previewImage": "https://t.kfs.io/upload_images/112175/pg21219__1__large.jpg",
+    "speaker": {
+			"name": "Yi-Tung Yeh",
+			"image": "https://avatars3.githubusercontent.com/u/45952431?s=460&v=4",
+			"facebook": "",
+      "website": "",
+      "github": "https://github.com/yehyitung"
+    },
+    "location": {
+      "name": "大安瑞安",
+      "address": "復興南路二段65號2樓之3-C",
+      "website": "",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taiwan-book-cleancode-002-naming",
 		"presentation": ""
   }
 ]
