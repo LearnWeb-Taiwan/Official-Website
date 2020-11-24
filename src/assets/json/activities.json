@@ -248,5 +248,55 @@
     },
     "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taiwan-book-cleancode-002-naming",
 		"presentation": ""
+  },
+  {
+		"id": 11,
+		"title": "Clean Code：簡短的函式與命名 & 糟糕的註解",
+		"tag": ["Book", "Learning"],
+    "type": "讀書會",
+    "date": "2020-07-18T11:00:00",
+		"content": "不要害怕替函式取上長長的名字，並讓函式盡可能簡短。及刪除你那糟糕的註解！",
+		"previewImage": "https://t.kfs.io/upload_images/112175/pg21219__1__large.jpg",
+    "speaker": {
+			"name": "Lee Piny",
+			"image": "https://avatars3.githubusercontent.com/u/57059608?s=460&v=4",
+			"facebook": "",
+      "website": "",
+      "github": "https://github.com/leepiny"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taiwan-book-cleancode-003-function",
+		"presentation": ""
+  },
+  {
+		"id": 12,
+		"title": "我說 PM，那個規格呢？",
+		"tag": ["Rampage"],
+    "type": "大亂鬥",
+    "date": "2020-07-18T11:00:00",
+		"content": "人生最快樂的事莫過於開發時只要按著規格做，然而 PM 絕對不會就如此善罷甘休……比起沒有規格，寫了規格後卻又三番兩次大改，到底哪種開發方式才是最流暢的呢？我們將要來一起談談規格這件事情！",
+		"previewImage": "https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/logo-rectangle-v1.0.png?raw=true",
+    "speaker": {
+			"name": "會眾們",
+			"image": "https://github.com/LearnWeb-Taiwan/Assets/blob/master/common/favicon-v1.0.png?raw=true",
+			"facebook": "",
+      "website": "",
+      "github": "https://github.com/LearnWeb-Taiwan"
+    },
+    "location": {
+      "name": "Notch 咖啡工場",
+      "address": "台北市中正區信陽街6號",
+      "website": "https://www.facebook.com/NOTCHfrontstation",
+      "lat": null,
+      "lng": null
+    },
+    "ticket": "https://learnweb-taiwan.kktix.cc/events/learnweb-taiwan-rampage-001",
+		"presentation": ""
   }
 ]
