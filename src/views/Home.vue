@@ -11,11 +11,15 @@
           想要找到一群能夠一起討論網頁技術的開發者？
         </p>
         <br />
-        <router-link to="/activities" class="banner-btn">
+        <a
+          href="https://learnweb-taiwan.kktix.cc/"
+          target="_blank"
+          class="banner-btn"
+        >
           加入我們
           <i class="icon fas fa-door-open"></i>
           <i class="icon fas fa-door-closed"></i>
-        </router-link>
+        </a>
         <br />
       </div>
       <pic-slider :imageSet="sliderImage" :slideSec="2" :needAutoSlide="true" />
@@ -26,18 +30,8 @@
       <h2 class="about-title">LearnWeb 在做什麼？</h2>
       <br />
       <p class="about-content">
-        「我們是一群熱於分享的網頁開發者們。」<br /><br />
-        我們不定時舉辦各種
-        <span class="highlight">講座</span>、
-        <span class="highlight">工作坊</span> 與
-        <span class="highlight">讀書會</span>
-        ，激發彼此對於網頁開發技術的無限想法。<br /><br />
-        我們期望能建立給予
-        <span class="highlight">正在自學</span>
-        與
-        <span class="highlight">剛入職</span>
-        的開發者們，一個能輕鬆發言的舞台。<br />
-        <br />
+        LearnWeb Taiwan
+        旨在交流網頁領域相關資訊與技術，包含但不限於「前端」/「後端」/「UI、UX」/「PM」等職務相關內容，我們不定時會舉辦工作坊、講座、純聊天場，也歡迎剛入門與想學習網頁技術的朋友加入！
       </p>
       <div class="about-card-wrapper">
         <!-- card -->

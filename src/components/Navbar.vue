@@ -14,9 +14,14 @@
       <router-link to="/" class="navbar-item" @click.native="goTop()">
         <i class="icon fas fa-home"></i>Home
       </router-link>
-      <router-link to="/activities" class="navbar-item" @click.native="goTop()">
+      <a
+        href="https://learnweb-taiwan.kktix.cc/"
+        target="_blank"
+        class="navbar-item"
+        @click.native="goTop()"
+      >
         <i class="icon far fa-calendar-alt"></i>Activities
-      </router-link>
+      </a>
       <!-- <router-link
         to="/collaboration"
         class="navbar-item"
@@ -54,13 +59,14 @@
       >
         <i class="icon fas fa-home"></i>Home
       </router-link>
-      <router-link
-        to="/activities"
+      <a
+        href="https://learnweb-taiwan.kktix.cc/"
+        target="_blank"
         class="navbar-item"
         @click.native=";(isMenuOpen = !isMenuOpen), goTop()"
       >
         <i class="icon far fa-calendar-alt"></i>Activities
-      </router-link>
+      </a>
       <!-- <router-link
         to="/collaboration"
         class="navbar-item"
