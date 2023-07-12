@@ -20,10 +20,10 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
-    "@vue/cli-plugin-e2e-nightwatch": "~4.3.0",
+    "@vue/cli-plugin-e2e-nightwatch": "~5.0.8",
     "@vue/cli-plugin-eslint": "~4.3.0",
     "@vue/cli-plugin-router": "~4.3.0",
-    "@vue/cli-plugin-unit-jest": "~4.3.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.8",
     "@vue/cli-plugin-vuex": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
     "@vue/eslint-config-prettier": "^6.0.0",
@@ -40,7 +40,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "geckodriver": "^1.19.1",
     "lint-staged": "^9.5.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^9.0.0",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
